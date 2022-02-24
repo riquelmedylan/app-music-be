@@ -41,13 +41,13 @@ router.put(
 );
 router.put(
      "/shopping/:uid",
-     [check("id").custom(userIdNotExist), fieldValidation],
+
      deleteUserProductCart
 );
 
 router.put(
      "/uid/:uid",
-     [check("id").custom(userIdNotExist), fieldValidation],
+
      userProductPut
 );
 
